@@ -1,0 +1,19 @@
+{
+    "name": "snowpack-boilerplate",
+    "version": "1.0.0",
+    "description": "A barebones snowpack boilerplate",
+    "main": "index.js",
+    "scripts": {
+        "start": "snowpack dev",
+        "build": "snowpack build"
+    },
+    "keywords": [
+        "snowpack",
+        "js"
+    ],
+    "author": "Graham Kineshanko",
+    "license": "MIT",
+    "devDependencies": {
+        "snowpack": "^3.0.11"
+    }
+}
