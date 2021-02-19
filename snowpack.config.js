@@ -6,7 +6,7 @@ module.exports = {
     mount: {
         src: "/",
     },
-    plugins: ["@snowpack/plugin-sass"],
+    plugins: ["@snowpack/plugin-react-refresh"],
     packageOptions: {
         /* ... */
     },

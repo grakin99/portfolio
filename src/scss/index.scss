@@ -1,4 +1,5 @@
 @use "_reset.scss";
-body {
+#root {
     width: 100vw;
+    overflow-x: hidden;
 }
