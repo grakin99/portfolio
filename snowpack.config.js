@@ -3,19 +3,19 @@
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
-    mount: {
-        src: "/",
-    },
-    plugins: ["@snowpack/plugin-react-refresh"],
-    packageOptions: {
-        /* ... */
-    },
-    devOptions: {
-        /* ... */
-    },
-    buildOptions: {
-        /* ... */
-    },
-    optimize: { bundle: true, minify: true, target: "es2020" },
-    exclude: ["**/node_modules/**", "**/scss/**"],
+  mount: {
+    src: "/",
+  },
+  plugins: ["@snowpack/plugin-react-refresh"],
+  packageOptions: {
+    /* ... */
+  },
+  devOptions: {
+    /* ... */
+  },
+  buildOptions: {
+    out: "portfolio",
+  },
+  optimize: { bundle: true, minify: true, target: "es2020" },
+  exclude: ["**/node_modules/**", "**/scss/**"],
 };
