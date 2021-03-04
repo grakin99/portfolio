@@ -1,5 +1,7 @@
-@use "_reset.scss";
+@import "_reset.scss";
+@import "./templates/header";
+@import "./templates/main";
 #root {
-    width: 100vw;
-    overflow-x: hidden;
+  width: 100vw;
+  overflow-x: hidden;
 }

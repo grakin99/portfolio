@@ -1,0 +1,25 @@
+nav {
+  width: 100%;
+  text-align: center;
+  padding: 3vw 3vw 0 3vw;
+  ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    li {
+      width: 100%;
+    }
+    h1 {
+      font-size: inherit;
+      font-weight: normal;
+    }
+    a{
+      padding: 1.5vw;
+      text-transform: uppercase;
+    }
+    a:hover{
+      text-decoration: overline;
+      text-decoration-thickness: 1vw;
+    }
+  }
+}
