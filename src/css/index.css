@@ -194,6 +194,7 @@ header svg {
   display: flex;
   height: 40vh;
   width: 60vw;
+  margin: 3vw 0;
   background-color: #17141d;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
@@ -293,7 +294,7 @@ svg {
   height: 100%;
   gap: 3vw;
   margin-top: 2rem;
-  align-content: space-evenly;
+  align-content: flex-start;
 }
 @media only screen and (min-width: 650px) {
   .about-grid {
