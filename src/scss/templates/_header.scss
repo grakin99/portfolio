@@ -1,19 +1,45 @@
 @import "../util/nav";
 @import "../breakpoints/points.scss";
 header {
+  div:first-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    grid-column: 1 / span 2;
+    align-items: center;
+  }
+
+  @include md {
+    div:first-of-type {
+      flex-wrap: nowrap;
+    }
+  }
+
   justify-items: center;
   align-items: end;
   display: grid;
-  height: 17vh;
-  padding-top: 3vh;
+  height: 100vh;
+  overflow-y: hidden;
+  color: #fff;
   grid-template-columns: repeat(1, 1fr);
   @include md {
     grid-template-columns: repeat(2, 1fr);
   }
+
   justify-content: space-evenly;
   svg {
     max-width: 40vw;
     height: max-content;
-    display: block;
+    fill: white;
+    padding-top: 5vh;
   }
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+  // I customized the wicked cool background on my homepage at SVGBackgrounds.com.
+}
+
+.call {
+  grid-column: 1 / span 2;
+  padding-bottom: 15vh;
 }
