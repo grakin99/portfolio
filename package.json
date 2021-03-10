@@ -1,25 +1,25 @@
 {
-    "name": "snowpack-boilerplate",
-    "version": "1.0.0",
-    "description": "A barebones snowpack boilerplate",
-    "main": "index.js",
-    "scripts": {
-        "start": "snowpack dev",
-        "build": "snowpack build"
-    },
-    "keywords": [
-        "snowpack",
-        "js"
-    ],
-    "author": "Graham Kineshanko",
-    "license": "MIT",
-    "devDependencies": {
-        "@snowpack/app-scripts-react": "^2.0.0",
-        "@snowpack/plugin-react-refresh": "^2.4.0",
-        "snowpack": "^3.0.11"
-    },
-    "dependencies": {
-        "react": "^17.0.1",
-        "react-dom": "^17.0.1"
-    }
+  "name": "gk-portfolio",
+  "version": "1.5.0",
+  "description": "graham kineshanko portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "keywords": [
+    "snowpack",
+    "js"
+  ],
+  "author": "Graham Kineshanko",
+  "license": "MIT",
+  "devDependencies": {
+    "@snowpack/app-scripts-react": "^2.0.0",
+    "@snowpack/plugin-react-refresh": "^2.4.0",
+    "snowpack": "^3.0.11"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }
