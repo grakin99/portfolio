@@ -1,7 +1,10 @@
 .card {
   display: flex;
   height: 40vh;
-  width: 30vw;
+  width: 60vw;
+  @include sm {
+    width: 40vw;
+  }
   background-color: #17141d;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
@@ -11,8 +14,11 @@
   left: 0px;
 }
 
-.card:not(:first-child) {
-  margin-left: -50px;
+.card:not(:nth-child(1n)) {
+  margin-right: 10%;
+}
+.card:not(:nth-child(2n)) {
+  margin-left: 10%;
 }
 
 .card:hover {
@@ -30,16 +36,16 @@
   color: white;
   font-weight: 300;
   position: absolute;
-  left: 20px;
-  top: 15px;
+  top: 1rem;
+  left: 0.3rem;
 }
 
 .bar {
   position: absolute;
   top: 100;
   left: 20;
-  height: 5px;
-  width: 150px;
+  height: 3%;
+  width: 100%;
 }
 
 .emptybar {
