@@ -2,10 +2,14 @@ nav {
   width: 100%;
   text-align: center;
   padding: 3vw 3vw 0 3vw;
+  div {
+    align-self: center;
+  }
   ul {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     li {
       width: 100%;
     }
@@ -13,11 +17,12 @@ nav {
       font-size: inherit;
       font-weight: normal;
     }
-    a{
+    a {
       padding: 1.5vw;
       text-transform: uppercase;
+      color: #fff;
     }
-    a:hover{
+    a:hover {
       text-decoration: overline;
       text-decoration-thickness: 1vw;
     }
