@@ -1,7 +1,8 @@
 import React from "react";
 import Logo from "../svg/logo";
 import DownArrow from "../svg/down-arrow";
-export default function Header() {
+
+export default () => {
   return (
     <header id="page">
       <div>
@@ -13,25 +14,29 @@ export default function Header() {
         <nav>
           <ul className="nav-menu">
             <li>
-              <a href="#about">
-                <h1>About me</h1>
+              <a className="nav-item" href="#about">
+                About me
               </a>
             </li>
             <li>
-              <a href="#work">work</a>
+              <a className="nav-item" href="#work">
+                work
+              </a>
             </li>
             <li>
-              <a href="#social">Socials</a>
+              <a className="nav-item" shref="#social">
+                Socials
+              </a>
             </li>
           </ul>
         </nav>
       </div>
       <div className="call">
-        <h2>Hey there, I am Graham kineshanko. I make things for the web.</h2>
+        <h1>Hey there, I am Graham kineshanko. I make things for the web.</h1>
         <a href="#work">
           <DownArrow />
         </a>
       </div>
     </header>
   );
-}
+};

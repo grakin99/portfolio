@@ -80,6 +80,16 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 nav {
   width: 100%;
   text-align: center;
@@ -112,6 +122,7 @@ nav ul a:hover {
 }
 
 header {
+  width: 100vw;
   justify-items: center;
   align-items: end;
   display: grid;
@@ -150,10 +161,11 @@ header svg {
 
 .call {
   grid-column: 1/span 2;
-  padding-bottom: 15vh;
+  padding-top: 10vh;
 }
 
 #root {
+  width: 100vw;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   align-items: end;
@@ -171,11 +183,117 @@ header svg {
 
 .about-me {
   height: 100vh;
-  overflow-y: hidden;
+  overflow-x: hidden;
   background-color: #cc5577;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23cc5577' width='11' height='11'/%3E%3Crect fill='%23cd5878' x='10' width='11' height='11'/%3E%3Crect fill='%23cd5a79' y='10' width='11' height='11'/%3E%3Crect fill='%23ce5d7a' x='20' width='11' height='11'/%3E%3Crect fill='%23ce5f7c' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23cf627d' y='20' width='11' height='11'/%3E%3Crect fill='%23cf657e' x='30' width='11' height='11'/%3E%3Crect fill='%23d0677f' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23d16a80' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23d16c81' y='30' width='11' height='11'/%3E%3Crect fill='%23d26f83' x='40' width='11' height='11'/%3E%3Crect fill='%23d27284' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23d37485' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23d37786' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23d47987' y='40' width='11' height='11'/%3E%3Crect fill='%23d57c88' x='50' width='11' height='11'/%3E%3Crect fill='%23d57e89' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23d6818b' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23d6848c' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23d7868d' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23d8898e' y='50' width='11' height='11'/%3E%3Crect fill='%23d88b8f' x='60' width='11' height='11'/%3E%3Crect fill='%23d98e90' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23d99192' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23da9393' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23da9694' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23db9895' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23dc9b96' x='70' width='11' height='11'/%3E%3Crect fill='%23dc9e97' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23dda098' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23dda39a' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23dea59b' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23dea89c' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23dfab9d' x='80' width='11' height='11'/%3E%3Crect fill='%23e0ad9e' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23e0b09f' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23e1b2a0' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23e1b5a2' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23e2b8a3' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23e2baa4' x='90' width='11' height='11'/%3E%3Crect fill='%23e3bda5' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23e4bfa6' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23e4c2a7' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23e5c5a9' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23e5c7aa' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23e6caab' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23e7ccac' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23e7cfad' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23e8d1ae' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23e8d4af' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23e9d7b1' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23e9d9b2' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23eadcb3' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23ebdeb4' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23ebe1b5' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23ece4b6' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23ece6b8' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23ede9b9' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23edebba' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23EEB' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
+}
+
+.card {
+  display: flex;
+  height: 40vh;
+  width: 30vw;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card:hover {
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar {
+  position: absolute;
+  top: 100;
+  left: 20;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  width: 0.333rem;
+  height: 100%;
+  background: #009ad9;
+  background: linear-gradient(90deg, #009ad9 0%, #d99300 65%, #ffba00 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 15vw;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  bottom: 0rem;
+  left: calc(50% - 65px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+.about-grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  height: 100%;
+  gap: 3vw;
+  margin-top: 4rem;
+  align-content: space-evenly;
+}
+@media only screen and (min-width: 650px) {
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #root {

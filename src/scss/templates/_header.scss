@@ -1,6 +1,7 @@
 @import "../util/nav";
 @import "../breakpoints/points.scss";
 header {
+  width: 100vw;
   div:first-of-type {
     display: flex;
     flex-wrap: wrap;
@@ -41,5 +42,5 @@ header {
 
 .call {
   grid-column: 1 / span 2;
-  padding-bottom: 15vh;
+  padding-top: 10vh;
 }
