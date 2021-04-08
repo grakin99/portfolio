@@ -1,14 +1,14 @@
 import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
-import Header from "./templates/header";
-import Main from "./templates/main";
+import Header from "./components/sections/header";
+import Main from "./components/sections/main";
 
 function App() {
   return (
-    <Fragment>
+    <React.StrictMode>
       <Header />
       <Main />
-    </Fragment>
+    </React.StrictMode>
   );
 }
 

@@ -1,3 +1,4 @@
 node_modules
 portfolio
 .DS_Store
+.vscode

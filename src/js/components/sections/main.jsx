@@ -1,5 +1,5 @@
 import React from "react";
-import AboutMe from "../sections/aboutMe";
+import AboutMe from "./aboutMe";
 export default function Main() {
   return (
     <main>
