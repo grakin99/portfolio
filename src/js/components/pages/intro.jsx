@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../svg/logo";
 import DownArrow from "../svg/down-arrow";
+import { Link } from "react-router-dom";
 
 export default () => {
   return (
@@ -14,9 +15,9 @@ export default () => {
       </div>
       <div className="call">
         <h1>Hey there, I am Graham kineshanko. I make things for the web.</h1>
-        <a href="#work">
+        <Link to="/main">
           <DownArrow />
-        </a>
+        </Link>
       </div>
     </header>
   );

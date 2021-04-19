@@ -1,5 +1,6 @@
 @import "../util/nav";
 @import "../breakpoints/points.scss";
+
 header {
   width: 100vw;
   div:first-of-type {
@@ -20,7 +21,7 @@ header {
   justify-items: center;
   align-items: end;
   display: grid;
-  height: 100vh;
+  height: 90vh;
   overflow-y: hidden;
   color: #fff;
   grid-template-columns: repeat(1, 1fr);
