@@ -108,7 +108,7 @@ nav ul li {
   width: 100%;
 }
 nav ul h1 {
-  font-size: inherit;
+  font-size: 1.687rem;
   font-weight: normal;
 }
 nav ul a {
@@ -191,7 +191,7 @@ header svg {
 .card {
   display: flex;
   flex-wrap: wrap;
-  width: 60vw;
+  width: 66vw;
   min-height: 200px;
   align-content: flex-start;
   margin-bottom: 3vw;
@@ -210,7 +210,9 @@ header svg {
 }
 .card .card-content {
   height: 100%;
+  max-width: 450px;
   display: grid;
+  padding: 3vw;
   align-content: space-evenly;
 }
 @media only screen and (min-width: 650px) {

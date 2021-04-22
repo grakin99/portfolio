@@ -1,7 +1,7 @@
 .card {
   display: flex;
   flex-wrap: wrap;
-  width: 60vw;
+  width: 66vw;
   min-height: 200px;
   align-content: flex-start;
   margin-bottom: 3vw;
@@ -20,7 +20,9 @@
   }
   .card-content {
     height: 100%;
+    max-width: 450px;
     display: grid;
+    padding: 3vw;
     align-content: space-evenly;
   }
   @include sm {

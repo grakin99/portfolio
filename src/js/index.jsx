@@ -21,6 +21,10 @@ function App() {
             <Nav />
             <Main />
           </Route>
+          <Route path="*">
+            <Nav />
+            <Main />
+          </Route>
         </Switch>
       </Router>
     </React.StrictMode>
