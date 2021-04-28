@@ -15,10 +15,15 @@
   "license": "MIT",
   "devDependencies": {
     "@snowpack/app-scripts-react": "^2.0.0",
+    "@snowpack/plugin-postcss": "^1.2.2",
     "@snowpack/plugin-react-refresh": "^2.4.0",
+    "postcss": "^8.2.13",
+    "postcss-cli": "^8.3.1",
     "snowpack": "^3.0.11"
   },
   "dependencies": {
+    "cssnano": "^5.0.2",
+    "postcss-preset-env": "^6.7.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }
