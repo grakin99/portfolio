@@ -1,0 +1,19 @@
+.contact {
+  display: grid;
+  justify-content: space-evenly;
+  svg {
+    width: 33vw;
+    max-width: 300px;
+  }
+
+  ul {
+    width: 100%;
+    display: grid;
+
+    @include sm {
+    }
+    li {
+      width: 100%;
+    }
+  }
+}

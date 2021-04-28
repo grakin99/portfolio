@@ -9,7 +9,7 @@ export default (props) => {
 
       <div className="card-content">
         <h3 className="title">{props.title}</h3>
-        {props.content}
+        <p>{props.content}</p>
       </div>
     </div>
   );

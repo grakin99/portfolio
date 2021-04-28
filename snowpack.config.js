@@ -16,6 +16,6 @@ module.exports = {
   buildOptions: {
     out: "portfolio",
   },
-  optimize: { bundle: true, minify: true, target: "es2020" },
+  optimize: { bundle: true, minify: true, target: "es2017" },
   exclude: ["**/node_modules/**", "**/scss/**"],
 };

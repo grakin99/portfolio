@@ -1,6 +1,4 @@
 @import "_reset.scss";
-@import "./templates/header";
-@import "./templates/main";
 @import "./sections/sections";
 @import "./ui/ui";
 @import "./type/scaling";
@@ -10,4 +8,14 @@ html {
 #root {
   width: 100vw;
   overflow-x: hidden;
+}
+
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
