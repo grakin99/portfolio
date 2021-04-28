@@ -3,6 +3,7 @@ import React from "react";
 export default function Email() {
   return (
     <a href="mailto:grahamkineshanko@gmail.com" target="#">
+      <p>Email</p>
       <svg viewBox="0 0 512 512">
         <rect
           x="48"

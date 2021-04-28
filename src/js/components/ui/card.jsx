@@ -8,7 +8,7 @@ export default (props) => {
       </div>
 
       <div className="card-content">
-        <h3 className="title">{props.title}</h3>
+        <p className="card-title">{props.title}</p>
         <p>{props.content}</p>
       </div>
     </div>
