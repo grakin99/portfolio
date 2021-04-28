@@ -109,6 +109,9 @@ select {
 .contact ul {
   width: 100%;
   display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3vw;
 }
 .contact ul li {
   width: 100%;
@@ -164,10 +167,6 @@ header svg {
   align-content: center;
   justify-content: center;
   text-align: center;
-}
-#root a {
-  display: initial;
-  align-self: center;
 }
 #root main {
   align-self: flex-start;
