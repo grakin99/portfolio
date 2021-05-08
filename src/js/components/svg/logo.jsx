@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Logo() {
   return (
-    <svg className="downArrow" viewBox="0 0 216.29 118.41">
+    <svg rel="preload" className="downArrow" viewBox="0 0 216.29 118.41">
       {/* <title>
         {"Hey there, I am Graham kineshanko. I make things for the web."}
       </title> */}

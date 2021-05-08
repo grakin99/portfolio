@@ -99,22 +99,35 @@ select {
 }
 
 .contact {
+  padding: 3vw;
   display: grid;
   justify-content: space-evenly;
+  background-color: #0f0f0f;
+  color: #fafafa;
 }
 .contact svg {
   width: 33vw;
   max-width: 300px;
 }
-.contact ul {
+.contact p {
+  max-width: 60ch;
+}
+.contact div:first-of-type {
+  margin-top: 3vw;
+}
+.contact .socialLinks {
   width: 100%;
   display: grid;
   justify-content: space-evenly;
   grid-template-columns: repeat(2, 1fr);
   gap: 3vw;
 }
-.contact ul li {
+.contact .socialLinks li {
+  margin-top: 3vw;
   width: 100%;
+}
+.contact .socialLinks li a {
+  color: #fafafa;
 }
 
 nav {
@@ -146,18 +159,39 @@ nav ul a:hover {
 
 header {
   width: 100vw;
-  display: flex;
+  padding: 3vw;
   display: grid;
+  gap: 3vw;
+  grid-template-columns: repeat(1, 1fr);
   height: 100vh;
+  flex-wrap: wrap;
   overflow-y: hidden;
-  align-content: center;
-  color: #fff;
+  align-content: space-evenly;
+  align-items: center;
+  color: #fafafa;
   background-color: #000000;
 }
+header div {
+  margin: 0 auto;
+  text-align: left;
+}
+header div h1 {
+  max-width: 20ch;
+  justify-self: center;
+}
+header div p {
+  max-width: 40ch;
+}
 header svg {
-  max-width: 70vw;
+  max-width: 33vw;
+  min-width: 300px;
   margin: 0 auto;
   fill: white;
+}
+@media only screen and (min-width: 650px) {
+  header {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 #root {
@@ -172,12 +206,16 @@ header svg {
   align-self: flex-start;
 }
 
+footer {
+  background-color: #0f0f0f;
+}
+
 .card {
   display: flex;
   flex-wrap: wrap;
   width: 66vw;
   min-height: 200px;
-  align-content: flex-start;
+  align-content: center;
   margin-bottom: 3vw;
   color: #fff;
   text-align: center;
@@ -195,12 +233,13 @@ header svg {
 }
 .card .card-content {
   height: 100%;
-  max-width: 450px;
+  color: #fafafa;
   display: grid;
   padding: 3vw;
+  max-width: 80ch;
   align-content: space-evenly;
 }
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 900px) {
   .card {
     width: 40vw;
     font-size: 2rem;
@@ -212,43 +251,6 @@ header svg {
   margin-bottom: 0.5rem;
 }
 
-.card:not(:nth-child(1n)) {
-  margin-right: 10%;
-}
-
-.card:not(:nth-child(2n)) {
-  margin-left: 10%;
-}
-
-.bar {
-  height: 3%;
-  width: 100%;
-  position: relative;
-  margin-bottom: 0.5vh;
-}
-
-.emptybar {
-  background-color: #2e3033;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-.filledbar {
-  position: absolute;
-  z-index: 3;
-  width: 0.333rem;
-  height: 100%;
-  background: #009ad9;
-  background: linear-gradient(90deg, #009ad9 0%, #d99300 65%, #ffba00 100%);
-  transition: 0.6s ease-out;
-}
-
-.card:hover .filledbar {
-  width: 15vw;
-  transition: 0.4s ease-out;
-}
-
 .about-grid {
   display: grid;
   justify-items: center;
@@ -258,7 +260,7 @@ header svg {
   margin-top: 2rem;
   align-content: flex-start;
 }
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 900px) {
   .about-grid {
     grid-template-columns: repeat(2, 1fr);
   }

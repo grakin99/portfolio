@@ -3,7 +3,7 @@ import React from "react";
 export default function Email() {
   return (
     <a href="mailto:grahamkineshanko@gmail.com" target="#">
-      <p className="hidden">Email Me</p>
+      <p>Email Me</p>
       <svg viewBox="0 0 512 512">
         <rect
           x="48"
@@ -13,12 +13,12 @@ export default function Email() {
           rx="40"
           ry="40"
           fill="none"
-          stroke="currentColor"
+          stroke="#fff"
           strokeWidth="32"
         />
         <path
           fill="none"
-          stroke="currentColor"
+          stroke="#fafafa"
           strokeWidth="32"
           d="m112 160 144 112 144-112"
         />

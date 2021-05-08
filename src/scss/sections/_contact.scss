@@ -1,18 +1,31 @@
 .contact {
+  padding: 3vw;
   display: grid;
   justify-content: space-evenly;
+  background-color: #0f0f0f;
+  color: #fafafa;
   svg {
     width: 33vw;
     max-width: 300px;
   }
+  p {
+    max-width: 60ch;
+  }
+  div:first-of-type {
+    margin-top: 3vw;
+  }
 
-  ul {
+  .socialLinks {
     width: 100%;
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: repeat(2, 1fr);
     gap: 3vw;
     li {
+      margin-top: 3vw;
+      a {
+        color: #fafafa;
+      }
       width: 100%;
     }
   }

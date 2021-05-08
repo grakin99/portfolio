@@ -3,17 +3,40 @@
 
 header {
   width: 100vw;
-  display: flex;
+  padding: 3vw;
   display: grid;
+  gap: 3vw;
+  grid-template-columns: repeat(1, 1fr);
   height: 100vh;
+  flex-wrap: wrap;
   overflow-y: hidden;
-  align-content: center;
-  color: #fff;
+  align-content: space-evenly;
+  align-items: center;
+  color: #fafafa;
+  background-color: #000000;
+  div {
+    margin: 0 auto;
+    text-align: left;
+
+    h1 {
+      max-width: 20ch;
+      justify-self: center;
+    }
+    p {
+      max-width: 40ch;
+    }
+  }
+
   svg {
-    max-width: 70vw;
+    max-width: 33vw;
+    min-width: 300px;
     margin: 0 auto;
     fill: white;
   }
-  background-color: #000000;
+
+  @include sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   // I customized the wicked cool background on my homepage at SVGBackgrounds.com.
 }
