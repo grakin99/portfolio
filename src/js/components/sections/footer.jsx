@@ -7,6 +7,7 @@ export default function Footer() {
       <a href="mailto:grahamkineshanko@gmail.com" target="#">
         <code> grahamkineshanko@gmail.com</code>
       </a>
+      <code>Built with React</code>
     </footer>
   );
 }

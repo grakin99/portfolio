@@ -1,14 +1,20 @@
-import React from "react";
-import Github from "../svg/github";
-import MailOutline from "../svg/mail-outline";
+import React, { Suspense } from "react";
+const Github = React.lazy(() => import("../svg/github"));
+const MailOutline = React.lazy(() => import("../svg/mail-outline"));
 export default function Socials() {
   return (
     <ul className="socialLinks">
       <li>
-        <Github />
+        <Suspense fallback={<div>... Loading</div>}>
+          {" "}
+          <Github />
+        </Suspense>
       </li>
       <li>
-        <MailOutline />
+        <Suspense fallback={<div>... Loading</div>}>
+          {" "}
+          <MailOutline />
+        </Suspense>
       </li>
     </ul>
   );

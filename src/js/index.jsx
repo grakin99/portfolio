@@ -1,16 +1,23 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
-import Header from "./components/sections/header";
-import Main from "./components/sections/main";
-import Footer from "./components/sections/footer";
-function App() {
-  return (
-    <React.StrictMode>
-      <Header />
-      <Main />
-      <Footer />
-    </React.StrictMode>
-  );
-}
+const Header = React.lazy(() => import("./components/sections/header"));
+const Main = React.lazy(() => import("./components/sections/main"));
+const Footer = React.lazy(() => import("./components/sections/footer"));
 
-ReactDOM.render(<App />, document.querySelector("#root"));
+const appRender = {
+  AppComponents: () => {
+    return (
+      <React.StrictMode>
+        <Suspense fallback={<div>... Loading</div>}>
+          <Header />
+          <Main />
+          <Footer />
+        </Suspense>
+      </React.StrictMode>
+    );
+  },
+  Render: () => {
+    ReactDOM.render(appRender.AppComponents(), document.querySelector("#root"));
+  },
+};
+appRender.Render();

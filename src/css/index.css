@@ -209,6 +209,9 @@ header svg {
 footer {
   background-color: #0f0f0f;
 }
+footer code {
+  color: #fafafa;
+}
 
 .card {
   display: flex;
