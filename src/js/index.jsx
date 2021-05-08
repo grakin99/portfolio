@@ -8,7 +8,7 @@ const appRender = {
   AppComponents: () => {
     return (
       <React.StrictMode>
-        <Suspense fallback={<div>... Loading</div>}>
+        <Suspense fallback={<div className="fallback">... Loading</div>}>
           <Header />
           <Main />
           <Footer />
