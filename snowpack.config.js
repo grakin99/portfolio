@@ -6,7 +6,7 @@ module.exports = {
   mount: {
     src: "/",
   },
-  plugins: ["@snowpack/plugin-postcss"],
+  plugins: ["@snowpack/plugin-postcss", "@snowpack/plugin-webpack"],
   packageOptions: {
     /* ... */
   },
@@ -16,6 +16,6 @@ module.exports = {
   buildOptions: {
     out: "portfolio",
   },
-  optimize: { bundle: true, minify: true, target: "es2017" },
+  // optimize: { bundle: true, minify: true, target: "es2017" },
   exclude: ["**/node_modules/**", "**/scss/**"],
 };
