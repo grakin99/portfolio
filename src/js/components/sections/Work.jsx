@@ -41,6 +41,11 @@ export default function WorkSection(props) {
         <p>My fizzBuzz implementation. Returns an array with the output</p>
         <code>{code}</code>
       </pre>
+      <pre>
+        <a href="https://stock-api-nait.netlify.app/" target="#">
+          My work with a restful api
+        </a>
+      </pre>
     </section>
   );
 }

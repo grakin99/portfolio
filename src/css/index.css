@@ -242,6 +242,9 @@ footer code {
   border-left: 1px solid #0f0f0f;
   border-right: 1px solid #0f0f0f;
 }
+.work-showcase pre a {
+  color: #fafafa;
+}
 
 .card {
   display: flex;
