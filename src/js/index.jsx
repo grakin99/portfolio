@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 const Header = React.lazy(() => import("./components/sections/header"));
 const Main = React.lazy(() => import("./components/sections/main"));
 const Footer = React.lazy(() => import("./components/sections/footer"));
-
 const app = {
   Components: () => {
     return (

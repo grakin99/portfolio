@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "cssnano": "^5.0.2",
-    "postcss-preset-env": "^6.7.0",
+    "postcss-preset-env": "^5.3.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }
