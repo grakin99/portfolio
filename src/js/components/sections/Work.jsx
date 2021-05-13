@@ -18,7 +18,7 @@ fizzy = (length = 101) => {
 import React from "react";
 
 const code = `
-fizzy = (length = 101) => {
+const fizzy = (length = 101) => {
     const buzzArray = [];
     for (let i = 1; i < length; i++) {
       if (i % 3 === 0 && i % 5 === 0) {
