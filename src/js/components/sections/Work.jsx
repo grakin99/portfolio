@@ -43,7 +43,7 @@ export default function WorkSection(props) {
       </pre>
       <pre>
         <a href="https://stock-api-nait.netlify.app/" target="#">
-          My work with a restful api
+          <button> My work with a restful api (external link)</button>
         </a>
       </pre>
     </section>

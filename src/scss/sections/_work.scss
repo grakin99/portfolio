@@ -19,6 +19,9 @@
 
   pre {
     a {
+      display: flex;
+      height: 100%;
+      align-items: center;
       color: #fafafa;
     }
     margin: 3vw;

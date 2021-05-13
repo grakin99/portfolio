@@ -243,6 +243,9 @@ footer code {
   border-right: 1px solid #0f0f0f;
 }
 .work-showcase pre a {
+  display: flex;
+  height: 100%;
+  align-items: center;
   color: #fafafa;
 }
 

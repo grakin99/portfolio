@@ -1,9 +1,13 @@
 import React from "react";
 
 export default function Footer() {
+  const today = new Date();
+
+  const date =
+    today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
   return (
     <footer>
-      <code>Graham Kineshanko | April 28 2021</code>
+      <code>Graham Kineshanko | {date}</code>
       <a href="mailto:grahamkineshanko@gmail.com" target="#">
         <code> grahamkineshanko@gmail.com</code>
       </a>
