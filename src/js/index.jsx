@@ -4,8 +4,8 @@ const Header = React.lazy(() => import("./components/sections/header"));
 const Main = React.lazy(() => import("./components/sections/main"));
 const Footer = React.lazy(() => import("./components/sections/footer"));
 
-const appRender = {
-  AppComponents: () => {
+const app = {
+  Components: () => {
     return (
       <React.StrictMode>
         <Suspense fallback={<div className="fallback">... Loading</div>}>
@@ -17,7 +17,7 @@ const appRender = {
     );
   },
   Render: () => {
-    ReactDOM.render(appRender.AppComponents(), document.querySelector("#root"));
+    ReactDOM.render(app.Components(), document.querySelector("#root"));
   },
 };
-appRender.Render();
+app.Render();

@@ -1,5 +1,5 @@
-import React from "react";
-import Logo from "../svg/logo";
+import React, { Suspense } from "react";
+const Logo = React.lazy(() => import("../svg/logo"));
 export default () => {
   return (
     <header id="header">
@@ -9,8 +9,9 @@ export default () => {
           I make websites! Big or small, custom wordpress or pure custom code.
         </p>
       </div>
-
-      <Logo />
+      <Suspense fallback={<div className="fallback">... Loading</div>}>
+        <Logo />
+      </Suspense>
     </header>
   );
 };

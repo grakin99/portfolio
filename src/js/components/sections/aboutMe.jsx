@@ -1,4 +1,4 @@
-import Card from "../ui/card";
+const Card = React.lazy(() => import("../ui/card"));
 import React from "react";
 export default () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 
-import SocialLinks from "../ui/socialLinks";
+const SocialLinks = React.lazy(() => import("../ui/socialLinks"));
 
 export default function ContactMe() {
   return (
