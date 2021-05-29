@@ -234,6 +234,7 @@ footer code {
   width: 100%;
 }
 .work-showcase pre {
+  max-width: 90vw;
   margin: 3vw;
   font-size: 1rem;
   white-space: pre-wrap;
@@ -245,6 +246,14 @@ footer code {
   height: 100%;
   align-items: center;
   color: #fafafa;
+}
+.work-showcase button {
+  font-size: 1.25rem;
+  padding: 3vw;
+  border-radius: 0.25rem;
+  color: #fafafa;
+  background-color: #b61919;
+  opacity: 1;
 }
 
 .card {

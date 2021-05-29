@@ -7,8 +7,8 @@ export default function ContactMe() {
     <section className="contact">
       <div>
         <p>
-          Take a look at my github, and email me! I am Currently looking for
-          work
+          Take a look at my github, and email me! I am currently working at
+          promohack as an independent contactor!
         </p>
       </div>
       <SocialLinks />
