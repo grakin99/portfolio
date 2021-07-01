@@ -97,6 +97,9 @@ select {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: repeat;
+  text-rendering: optimizeSpeed;
+  shape-rendering: optimizeSpeed;
+  image-rendering: optimizeSpeed;
 }
 
 .contact {
@@ -226,6 +229,9 @@ footer code {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  text-rendering: optimizeSpeed;
+  shape-rendering: optimizeSpeed;
+  image-rendering: optimizeSpeed;
 }
 .work-showcase * {
   flex-grow: 1;
@@ -317,6 +323,22 @@ nav {
 }
 nav li a {
   color: #000;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-rendering: optimizeSpeed;
+}
+
+svg {
+  text-rendering: optimizeSpeed;
+  image-rendering: optimizeSpeed;
+}
+
+path {
+  shape-rendering: optimizeSpeed;
 }
 
 .flex {

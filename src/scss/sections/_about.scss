@@ -5,4 +5,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-repeat: repeat;
+  text-rendering: optimizeSpeed;
+  shape-rendering: optimizeSpeed;
+  image-rendering: optimizeSpeed;
 }

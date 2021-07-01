@@ -10,6 +10,9 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  text-rendering: optimizeSpeed;
+  shape-rendering: optimizeSpeed;
+  image-rendering: optimizeSpeed;
   * {
     flex-grow: 1;
   }
